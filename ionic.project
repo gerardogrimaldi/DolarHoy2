@@ -1,0 +1,8 @@
+{
+  "name": "DolarHoy2",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ]
+}
