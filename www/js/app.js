@@ -3,9 +3,8 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-// 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -22,62 +21,50 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
-
-  // Ionic uses AngularUI Router which uses the concept of states
-  // Learn more here: https://github.com/angular-ui/ui-router
-  // Set up the various states which the app can be in.
-  // Each state's controller can be found in controllers.js
   $stateProvider
 
-    // setup an abstract state for the tabs directive
-    .state('tab', {
-      url: "/tab",
+    .state('app', {
+      url: "/app",
       abstract: true,
-      templateUrl: "templates/tabs.html"
+      templateUrl: "templates/menu.html",
+      controller: 'AppCtrl'
     })
 
-    // Each tab has its own nav history stack:
-
-    .state('tab.oficial', {
-      url: '/oficial',
+    .state('app.dolar', {
+      url: "/dolar",
       views: {
-        'tab-dash': {
-          templateUrl: 'templates/tab-oficial.html',
-          controller: 'OficialCtrl'
+        'menuContent' :{
+          templateUrl: "templates/dolar.html"
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('app.calculadora', {
+      url: "/calculadora",
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
+        'menuContent' :{
+          templateUrl: "templates/calculadora.html"
         }
       }
     })
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
+    .state('app.mapa', {
+      url: "/mapa",
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'menuContent' :{
+          templateUrl: "templates/mapa.html",
+          controller: 'PlaylistsCtrl'
         }
       }
     })
-
-    .state('tab.account', {
-      url: '/account',
+    .state('app.contacto', {
+      url: "/contacto",
       views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+        'menuContent' :{
+          templateUrl: "templates/contacto.html",
+          controller: 'PlaylistsCtrl'
         }
       }
-    });
-
+    }) ;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/oficial');
-
+  $urlRouterProvider.otherwise('/app/dolar');
 });
