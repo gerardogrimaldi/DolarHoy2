@@ -2,7 +2,11 @@
   "name": "DolarHoy2",
   "app_id": "",
   "gulpStartupTasks": [
-    "sass",
+    "sass:true",
     "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
   ]
 }
