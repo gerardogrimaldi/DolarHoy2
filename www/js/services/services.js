@@ -1,4 +1,4 @@
-'strict'
+
 angular.module('dolarHoy2', [])
   .service('dolarService', function($http) {
 
@@ -11,11 +11,11 @@ angular.module('dolarHoy2', [])
         that.dolar = data.dolar;
       })
       .error(function(data) {
-
+        console.log('Error: ' + data.message);
       });
     };
 
-    this.getCity = function() {
+    this.getDolar = function() {
       return this.dolar;
     };
   });
