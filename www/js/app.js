@@ -27,7 +27,7 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers'])
       url: "/app",
       abstract: true,
       templateUrl: "templates/menu.html",
-      controller: 'AppCtrl'
+      controller: 'DolarCtrl'
     })
 
     .state('app.dolar', {
@@ -61,7 +61,7 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/contacto.html",
-          controller: 'PlaylistsCtrl'
+          controller: 'DolarCtrl'
         }
       }
     }) ;

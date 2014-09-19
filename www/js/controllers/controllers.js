@@ -1,49 +1,39 @@
+var app = angular.module('dolarHoy2.controllers', []);
 
-angular.module('dolarHoy2.controllers', [])
+app.controller('DolarCtrl', function DolarCtrl($scope, dolarFactory) {
+  $scope.dolar = dolarFactory;
+});
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-  // Form data for the login modal
-  $scope.loginData = {};
+app.service('dolarService', function() {
+  var that = this;
+    this.dolar = {};
 
-  // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
+    this.initDolar = function() {
+      $http.get('http://dolarhoyserver.herokuapp.com/dolar/Hola123!')
+      .success(function(data) {
+        that.dolar = data.dolar;
+      })
+      .error(function(data) {
+        console.log('Error: ' + data.message);
+      });
+    };
 
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  };
+    this.getDolar = function() {
+      return this.dolar;
+    };
+});
 
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
-  };
+app.factory('dolarFactory', function($http) {
 
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
+  return JSON.parse('{"_id":"541c552d83247a020000002c","dolarCompra":"8.390","dolarVenta":"8.440","dolarBlueCompra":"14.900","dolarBlueVenta":"14.970","dolarTarjeta":"11.394","realCompra":"2.3757","realVenta":"2.3762","euroCompra":"10.900","euroVenta":"11.350","date":"2014-09-19T13:09:17.000Z"}');
+    // $http.get('http://dolarhoyserver.herokuapp.com/dolar/Hola123!')
+    // .success(function(data) {
+    //   debugger;
+    //   //return JSON.parse(data);
+    //
+    // })
+    // .error(function(data) {
+    //   console.log('Error: ' + data.message);
+    // });
 
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
-})
-
-.controller('DolarCtrl', function($scope, dolarService) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
 });
