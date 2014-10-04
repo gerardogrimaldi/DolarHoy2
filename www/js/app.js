@@ -17,6 +17,28 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers'])
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+    if(window.plugins && window.plugins.AdMob) {
+      var admob_key = device.platform == 'Android' ? 'pub-9034277405854547' : 'ca-app-pub-9034277405854547/8387680207';
+      var admob = window.plugins.AdMob;
+      console.log(admob_key);
+      admob.createBannerView(
+      {
+          'publisherId': admob_key,
+          'adSize': admob.AD_SIZE.SMART_BANNER,
+          'bannerAtTop': false
+      },
+      function() {
+          admob.requestAd(
+              { 'isTesting': false },
+              function() {
+                  admob.showAd(true);
+              },
+              function() { console.log('failed to request ad'); }
+          );
+      },
+      function() { console.log('failed to create banner view'); }
+      );
+    }
   });
 })
 
