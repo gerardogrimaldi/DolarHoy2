@@ -10,7 +10,7 @@ angular.module('dolarHoy2.controllers', [])
         $scope.hide();
       });
     }
-  $scope.hide = function(){
-    $ionicLoading.hide();
-  };
-  });
+    $scope.hide = function(){
+      $ionicLoading.hide();
+    };
+});
