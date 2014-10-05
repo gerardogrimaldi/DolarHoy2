@@ -1,16 +1,31 @@
 <ion-view title="Dolar" ng-init="load()">
     <ion-content class="padding">
       <ion-list>
+        <div class="card">
+          <div class="item item-divider">
+            <h1>Dolar Oficial</h1>
+          </div>
+          <div class="item item-text-wrap">
+            <h2>
+              Compra : $ {{ dolar.dolarCompra }}
+              <i class="icon ion-ios7-copy-outline"></i>
+            </h2>
+            <h2>
+              Venta : $ {{ dolar.dolarVenta }}
+              <i class="icon ion-ios7-copy-outline"></i>
+            </h2>
+          </div>
+          <div class="item item-divider">
+            I'm a Footer in a Card!
+          </div>
+        </div>
         <ion-item class="card" href="#">
           <h1>Dolar Oficial</h1>
           <h2>
             Compra : $ {{ dolar.dolarCompra }}
             <i class="icon ion-ios7-copy-outline"></i>
           </h2>
-          <h2>
-            Venta : $ {{ dolar.dolarVenta }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
+
         </ion-item>
         <ion-list>
         <ion-item class="card" href="#">
