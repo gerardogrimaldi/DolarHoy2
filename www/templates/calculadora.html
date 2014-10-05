@@ -4,9 +4,39 @@
   </ion-nav-buttons>
   <ion-content class="has-header">
     <h1>Calculadora</h1>
-    <input/>
-    <button class="button button-outline button-positive">
-      Calcular
-    </button>
+
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Oficial</span>
+        <input type="text" ng-model="valores.oficial" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Ahorro</span>
+        <input type="text" ng-model="valores.ahorro" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Blue / Paralelo</span>
+        <input type="text" ng-model="valores.blue" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Tarjeta</span>
+        <input type="text" ng-model="valores.tarjeta" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Real</span>
+        <input type="text" ng-model="valores.real" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Euro</span>
+        <input type="text" ng-model="valores.euro" placeholder="">
+      </label>
+    </div>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <i class="icon ion-calculator placeholder-icon"></i>
+        <input type="text" ng-model='aCalcular' placeholder="Calcular">
+      </label>
+    </div>
   </ion-content>
 </ion-view>

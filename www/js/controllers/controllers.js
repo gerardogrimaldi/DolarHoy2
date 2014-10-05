@@ -2,6 +2,7 @@ angular.module('dolarHoy2.controllers', [])
   .controller('DolarCtrl', function DolarCtrl($scope, $rootScope, $ionicLoading, dolarService) {
     var scope = $rootScope;
     $scope.load = function() {
+      $scope.loading = true;
       $ionicLoading.show({
         template: 'Actualizando datos...'
       });
@@ -11,6 +12,7 @@ angular.module('dolarHoy2.controllers', [])
       });
     }
     $scope.hide = function(){
+      $scope.loading = false;
       $ionicLoading.hide();
     };
 });

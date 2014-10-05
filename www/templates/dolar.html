@@ -1,78 +1,94 @@
 <ion-view title="Dolar" ng-init="load()">
-    <ion-content class="padding">
-      <ion-list>
-        <div class="card">
-          <div class="item item-divider">
-            <h1>Dolar Oficial</h1>
-          </div>
-          <div class="item item-text-wrap">
-            <h2>
-              Compra : $ {{ dolar.dolarCompra }}
-              <i class="icon ion-ios7-copy-outline"></i>
-            </h2>
-            <h2>
-              Venta : $ {{ dolar.dolarVenta }}
-              <i class="icon ion-ios7-copy-outline"></i>
-            </h2>
-          </div>
-          <div class="item item-divider">
-            I'm a Footer in a Card!
-          </div>
-        </div>
-        <ion-item class="card" href="#">
-          <h1>Dolar Oficial</h1>
-          <h2>
-            Compra : $ {{ dolar.dolarCompra }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
 
-        </ion-item>
-        <ion-list>
+  <ion-content class="has-header">
+    <ion-list>
+    <div class="card">
+      <div class="item">
+        <h1>Dolar Oficial</h1>
+      </div>
+      <div class="item item-body item-text-wrap">
+        <h2>
+            Compra : $ {{ dolar.dolarCompra }}
+          <a href="#" class="subdued icon ion-ios7-copy">&nbsp;Copiar</a>
+        </h2>
+        <h2>
+          Venta : $ {{ dolar.dolarVenta }}
+          <i class="icon ion-ios7-copy-outline"></i>
+        </h2>
+      </div>
+      <div class="item item-divider">
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#">
+            <i class="icon ion-thumbsup"></i>
+            Like
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-chatbox"></i>
+            Comment
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
+      </div>
+    </div>
+    <ion-item class="card" href="#">
+      <h1>Dolar Oficial</h1>
+      <h2>
+        Compra : $ {{ dolar.dolarCompra }}
+        <i class="icon ion-ios7-copy-outline"></i>
+      </h2>
+    </ion-item>
+      <ion-list>
+      <ion-item class="card" href="#">
+        <h1>Dolar Blue/Paralelo</h1>
+        <h2>
+          Compra : $ {{ dolar.dolarBlueCompra }}
+          <i class="icon ion-ios7-copy-outline"></i>
+        </h2>
+        <h2>
+          Venta : $ {{ dolar.dolarBlueVenta }}
+          <i class="icon ion-ios7-copy-outline"></i>
+        </h2>
+      </ion-item>
+      <ion-list>
         <ion-item class="card" href="#">
-          <h1>Dolar Blue/Paralelo</h1>
+          <h1>Dolar Tarjeta</h1>
           <h2>
-            Compra : $ {{ dolar.dolarBlueCompra }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
-          <h2>
-            Venta : $ {{ dolar.dolarBlueVenta }}
+            $ {{ dolar.dolarTarjeta }}
             <i class="icon ion-ios7-copy-outline"></i>
           </h2>
         </ion-item>
-        <ion-list>
-          <ion-item class="card" href="#">
-            <h1>Dolar Tarjeta</h1>
-            <h2>
-              $ {{ dolar.dolarTarjeta }}
-              <i class="icon ion-ios7-copy-outline"></i>
-            </h2>
-          </ion-item>
-        </ion-list>
-        <ion-list>
-          <ion-item class="card" href="#">
-            <h1>Real Oficial</h1>
-            <h2>
-              Compra : $ {{ dolar.realCompra }}
-              <i class="icon ion-ios7-copy-outline"></i>
-            </h2>
-            <h2>
-              Venta : $ {{ dolar.realVenta }}
-              <i class="icon ion-ios7-copy-outline"></i>
-            </h2>
-          </ion-item>
-        </ion-list>
-        <ion-list>
-          <ion-item class="card" href="#">
-            <h1>Euro Oficial</h1>
-            <h2>
-              Compra : $ {{ dolar.euroCompra }}
-              <i class="icon ion-ios7-copy-outline"></i>
-            </h2>
-            <h2>
-              Venta : $ {{ dolar.euroVenta }}
-              <i class="icon ion-ios7-copy-outline"></i>
-            </h2>
-          </ion-item>
-        </ion-list>
-    </ion-content>
+      </ion-list>
+      <ion-list>
+        <ion-item class="card" href="#">
+          <h1>Real Oficial</h1>
+          <h2>
+            Compra : $ {{ dolar.realCompra }}
+            <i class="icon ion-ios7-copy-outline"></i>
+          </h2>
+          <h2>
+            Venta : $ {{ dolar.realVenta }}
+            <i class="icon ion-ios7-copy-outline"></i>
+          </h2>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item class="card" href="#">
+          <h1>Euro Oficial</h1>
+          <h2>
+            Compra : $ {{ dolar.euroCompra }}
+            <i class="icon ion-ios7-copy-outline"></i>
+          </h2>
+          <h2>
+            Venta : $ {{ dolar.euroVenta }}
+            <i class="icon ion-ios7-copy-outline"></i>
+          </h2>
+        </ion-item>
+      </ion-list>
+  </ion-content>
 </ion-view>
