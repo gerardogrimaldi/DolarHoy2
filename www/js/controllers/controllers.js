@@ -15,4 +15,19 @@ angular.module('dolarHoy2.controllers', [])
       $scope.loading = false;
       $ionicLoading.hide();
     };
+
+    $scope.$watch('aCalcular', function() {
+      //$scope.calcular = function(){
+      alert(aCalcular);
+        valores = {};
+        valores.oficial = $scope.aCalcular * scope.dolar.dolarVenta;
+        valores.ahorro = $scope.aCalcular * ((scope.dolar.dolarVenta * 20) / 100);
+        valores.blue = $scope.aCalcular * scope.dolar.dolarBlueCompra;
+        valores.tarjeta = $scope.aCalcular * scope.dolar.dolarTarjeta;
+        valores.real = $scope.aCalcular * scope.dolar.realVenta;
+        valores.euro   = $scope.aCalcular * scope.dolar.euroVenta;
+      //}
+    });
+
+
 });
