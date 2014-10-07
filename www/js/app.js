@@ -56,7 +56,8 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers'])
       url: "/dolar",
       views: {
         'menuContent' :{
-          templateUrl: "templates/dolar.html"
+          templateUrl: "templates/dolar.html",
+          controller: 'DolarCtrl'
         }
       }
     })
