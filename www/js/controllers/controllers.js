@@ -20,9 +20,9 @@ angular.module('dolarHoy2.controllers', [])
       $ionicLoading.hide();
     };
 
+
     $scope.calcular = function(){
-      dolarService.getData().then(function(data) {
-        $scope.dolar = data;
+      $scope.static = 1;
 
         if($scope.dolar){
           debugger;
@@ -35,7 +35,7 @@ angular.module('dolarHoy2.controllers', [])
           $scope.valores.euro   = $scope.aCalcular * $scope.dolar.euroVenta;
         }
 
-    });
-    }
-    $scope.$watch('acalcular', $scope.calcular);
+      };
+
+    $scope.$watch('aCalcular', $scope.calcular);
 });
