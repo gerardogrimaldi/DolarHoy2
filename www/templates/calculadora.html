@@ -7,7 +7,7 @@
     <div class="list">
       <label class="item item-input item-stacked-label">
         <span class="input-label">Oficial</span>
-        <input type="text" ng-model="valores.oficial" placeholder="">
+        <input type="text" disabled ng-model="valores.oficial" placeholder="">
       </label>
       <label class="item item-input item-stacked-label">
         <span class="input-label">Ahorro</span>
@@ -31,14 +31,14 @@
       </label>
     </div>
 
-    <div class="list list-inset">
+    <form class="list list-inset">
       <label class="item item-input">
         <i class="icon ion-calculator placeholder-icon"></i>
         <input type="number" step="any" ng-model="aCalcular" placeholder="Valor a Calcular"/>
+        <button class="button button-positive" ng-click="calcular(aCalcular)">
+        Calcular
+        </button>
       </label>
-
-      <button class="btn" ng-click="calcular(aCalcular)">{{aCalcular}}</button>
-
-    </div>
+    </form>
   </ion-content>
 </ion-view>

@@ -67,7 +67,7 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/calculadora.html",
-          controller: 'CalcCtrl'
+          controller: 'DolarCtrl'
         }
       }
     })
