@@ -2,7 +2,7 @@
   <ion-nav-buttons side="left">
     <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
-{{static}}
+
   <ion-content class="has-header">
     <div class="list">
       <label class="item item-input item-stacked-label">
@@ -34,10 +34,10 @@
     <div class="list list-inset">
       <label class="item item-input">
         <i class="icon ion-calculator placeholder-icon"></i>
-        <input type="number" step="any" ng-model="calcu.aCalcular" placeholder="Valor a Calcular">
+        <input type="number" step="any" ng-model="aCalcular" placeholder="Valor a Calcular"/>
       </label>
 
-      <button class="btn" ng-click="calcular()">hola</button>
+      <button class="btn" ng-click="calcular(aCalcular)">{{aCalcular}}</button>
 
     </div>
   </ion-content>

@@ -67,19 +67,21 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers'])
       views: {
         'menuContent' :{
           templateUrl: "templates/calculadora.html",
-          controller: 'DolarCtrl'
+          controller: 'CalcCtrl'
         }
       }
     })
+
     .state('app.mapa', {
       url: "/mapa",
       views: {
         'menuContent' :{
           templateUrl: "templates/mapa.html",
-          controller: 'PlaylistsCtrl'
+          controller: 'DolarCtrl'
         }
       }
     })
+
     .state('app.contacto', {
       url: "/contacto",
       views: {
@@ -88,7 +90,7 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers'])
           controller: 'DolarCtrl'
         }
       }
-    }) ;
+    });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dolar');
 });
