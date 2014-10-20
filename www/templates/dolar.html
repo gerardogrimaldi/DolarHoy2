@@ -5,90 +5,151 @@
 
   <ion-content class="has-header">
     <ion-list>
+  <ion-item>
+    I love kittens!
+    <ion-option-button class="button-positive">Share</ion-option-button>
+    <ion-option-button class="button-assertive">Edit</ion-option-button>
+  </ion-item>
+</ion-list>
     <div class="card">
-      <div class="item">
+      <div class="item item-divider">
         <h1>Dolar Oficial</h1>
+      </div>
+      <div class="item item-text-wrap">
+        <h2>
+          <a href="#" ng-click="show('Dolar Compra', dolar.dolarCompra)" class="subdued" >&nbsp;Compra : $ {{ dolar.dolarCompra }}</a>
+        </h2>
+        <h2>
+          <a href="#" ng-click="show('Dolar Venta', dolar.dolarVenta)" class="subdued" >&nbsp;Venta : $ {{ dolar.dolarVenta }}</a>
+        </h2>
+      </div>
+      <div class="item tabs item-divider tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#" ng-clic="twittear('Dolar compra', dolar.dolarCompra + 'Dolar venta ' + dolar.dolarVenta)">
+          <i class="icon ion-social-twitter"></i>
+          Tweet
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-ios7-upload"></i>
+          Share
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">
+        <h1>Dolar Blue/Paralelo</h1>
+      </div>
+      <div class="item" >
+        <h2>
+          <a href="#" ng-click="show('Dolar Blue Compra', dolar.dolarBlueCompra)" class="subdued" >&nbsp;Compra : $ {{ dolar.dolarBlueCompra }}</a>
+        </h2>
+        <h2>
+          <a href="#" ng-click="show('Dolar Blue Venta', dolar.dolarBlueVenta)" class="subdued" >&nbsp;Venta : $ {{ dolar.dolarBlueVenta }}</a>
+        </h2>
+      </div>
+      <div class="item tabs item-divider tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-social-twitter"></i>
+          Tweet
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-ios7-upload"></i>
+          Share
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">
+        <h1>Dolar Tarjeta</h1>
       </div>
       <div class="item item-body item-text-wrap">
         <h2>
-            Compra : $ {{ dolar.dolarCompra }}
-          <a href="#" class="subdued icon ion-ios7-copy">&nbsp;Copiar</a>
-        </h2>
-        <h2>
-          Venta : $ {{ dolar.dolarVenta }}
-          <i class="icon ion-ios7-copy-outline"></i>
+          <a href="#" ng-click="show('Dolar Tarjeta', dolar.dolarTarjeta)" class="subdued" >&nbsp;$ {{ dolar.dolarTarjeta }}</a>
         </h2>
       </div>
-      <div class="item item-divider">
-        <div class="item tabs tabs-secondary tabs-icon-left">
-          <a class="tab-item" href="#">
-            <i class="icon ion-thumbsup"></i>
-            Like
-          </a>
-          <a class="tab-item" href="#">
-            <i class="icon ion-chatbox"></i>
-            Comment
-          </a>
-          <a class="tab-item" href="#">
-            <i class="icon ion-share"></i>
-            Share
-          </a>
-        </div>
+      <div class="item tabs item-divider tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-social-twitter"></i>
+          Tweet
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-ios7-upload"></i>
+          Share
+        </a>
       </div>
     </div>
-    <ion-item class="card" href="#">
-      <h1>Dolar Oficial</h1>
-      <h2>
-        Compra : $ {{ dolar.dolarCompra }}
-        <i class="icon ion-ios7-copy-outline"></i>
-      </h2>
-    </ion-item>
-      <ion-list>
-      <ion-item class="card" href="#">
-        <h1>Dolar Blue/Paralelo</h1>
+
+    <div class="card">
+      <div class="item item-divider">
+        <h1>Real Oficial</h1>
+      </div>
+      <div class="item item-body item-text-wrap">
         <h2>
-          Compra : $ {{ dolar.dolarBlueCompra }}
-          <i class="icon ion-ios7-copy-outline"></i>
+          <a href="#" ng-click="show('Real Compra')" class="subdued" >&nbsp;Compra : $ {{ dolar.realCompra }}</a>
         </h2>
         <h2>
-          Venta : $ {{ dolar.dolarBlueVenta }}
-          <i class="icon ion-ios7-copy-outline"></i>
+          <a href="#" ng-click="show('Real Compra')" class="subdued" >&nbsp;Venta : $ {{ dolar.realVenta }}</a>
         </h2>
-      </ion-item>
-      <ion-list>
-        <ion-item class="card" href="#">
-          <h1>Dolar Tarjeta</h1>
-          <h2>
-            $ {{ dolar.dolarTarjeta }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-item class="card" href="#">
-          <h1>Real Oficial</h1>
-          <h2>
-            Compra : $ {{ dolar.realCompra }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
-          <h2>
-            Venta : $ {{ dolar.realVenta }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-        <ion-item class="card" href="#">
-          <h1>Euro Oficial</h1>
-          <h2>
-            Compra : $ {{ dolar.euroCompra }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
-          <h2>
-            Venta : $ {{ dolar.euroVenta }}
-            <i class="icon ion-ios7-copy-outline"></i>
-          </h2>
-        </ion-item>
-      </ion-list>
+      </div>
+      <div class="item tabs item-divider tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-social-twitter"></i>
+          Tweet
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-ios7-upload"></i>
+          Share
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">
+        <h1>Euro Oficial</h1>
+      </div>
+      <div class="item item-body item-text-wrap">
+        <h2>
+          <a href="#" ng-click="show('Euro Compra')" class="subdued" >&nbsp;Compra : $ {{ dolar.euroCompra }}</a>
+        </h2>
+        <h2>
+          <a href="#" ng-click="show('Euro Compra')" class="subdued" >&nbsp;Venta : $ {{ dolar.euroVenta }}</a>
+        </h2>
+      </div>
+      <div class="item tabs item-divider tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-social-twitter"></i>
+          Tweet
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-ios7-upload"></i>
+          Share
+        </a>
+      </div>
+    </div>
+
+
+
+
   </ion-content>
 </ion-view>

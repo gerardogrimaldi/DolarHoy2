@@ -1,6 +1,51 @@
 angular.module('dolarHoy2.controllers', [])
-  .controller('DolarCtrl', function DolarCtrl($scope, $rootScope, $ionicLoading, dolarService) {
+  .controller('DolarCtrl', function DolarCtrl($scope, $rootScope, $ionicLoading,
+    $ionicActionSheet, dolarService, $timeout, $cordovaClipboard, $window,
+    $cordovaDialogs,
+    $cordovaSocialSharing) {
+
+
     var scope = $rootScope;
+
+    // Triggered on a button click, or some other target
+    $scope.show = function(type, toCopyValue) {
+      // Show the action sheet
+      $scope.toCopyValue = toCopyValue;
+      var hideSheet = $ionicActionSheet.show({
+        buttons: [
+         { text: '<b>Copiar</b>' }
+        ],
+        titleText: 'Copiar Valores de ' + type,
+        cancelText: 'Cancel',
+        cancel: function() {
+          hideSheet();
+        },
+        buttonClicked: function(index) {
+          if(index == 0){
+            if($window.cordova){
+              $cordovaClipboard
+                .copy($scope.toCopyValue)
+                .then(function () {
+                  $cordovaDialogs.alert('Copiado el valor ' + $scope.toCopyValue,
+                  'Copiar valor', 'Ok')
+                    .then(function() {
+                      // callback success
+                    });
+                  }, function () {
+                  console.log('error');
+                });
+              } else {
+                $scope.copyToClipboard($scope.toCopyValue);
+              }
+           return true;
+          }
+        }
+      });
+    };
+
+    $scope.copyToClipboard = function(text) {
+      //copiar a clipboard
+    } ;
 
     $scope.valores = {};
 
@@ -34,4 +79,65 @@ angular.module('dolarHoy2.controllers', [])
 
     $scope.$watch('aCalcular', $scope.calcular());
 
+    $scope.twittear = function(type,value) {
+      $cordovaSocialSharing
+        .shareViaTwitter('Los valores de hoy del dolar son ' + type)
+        .then(function(result) {
+          // Success!
+        }, function(err) {
+          // An error occured. Show a message to the user
+        });
+    }
+
+    /*$cordovaSocialSharing
+      .shareViaTwitter(message, image, link)
+      .then(function(result) {
+        // Success!
+      }, function(err) {
+        // An error occured. Show a message to the user
+      });
+
+    $cordovaSocialSharing
+      .shareViaWhatsApp(message, image, link)
+      .then(function(result) {
+        // Success!
+      }, function(err) {
+        // An error occured. Show a message to the user
+      });
+
+
+    $cordovaSocialSharing
+      .shareViaFacebook(message, image, link)
+      .then(function(result) {
+        // Success!
+      }, function(err) {
+        // An error occured. Show a message to the user
+      });
+
+    // access multiple numbers in a string like: '0612345678,0687654321'
+    $cordovaSocialSharing
+      .shareViaSMS(message, number)
+      .then(function(result) {
+        // Success!
+      }, function(err) {
+        // An error occurred. Show a message to the user
+      });
+
+    // TO, CC, BCC must be an array, Files can be either null, string or array
+    $cordovaSocialSharing
+      .shareViaEmail(message, subject, toArr, bccArr, file)
+      .then(function(result) {
+        // Success!
+      }, function(err) {
+        // An error occurred. Show a message to the user
+      });
+
+
+    $cordovaSocialSharing
+      .canShareVia(socialType, message, image, link)
+      .then(function(result) {
+        // Success!
+      }, function(err) {
+        // An error occurred. Show a message to the user
+      });*/
 });
