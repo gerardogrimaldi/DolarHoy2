@@ -1,14 +1,15 @@
 <div class="item tabs item-divider tabs-secondary tabs-icon-left">
   <a class="tab-item" href="#">
-    <i class="icon ion-thumbsup"></i>
-    Like
+    <i class="icon ion-social-facebook-outline"
+       ng-click="window.plugins.socialsharing.shareViaTwitter('Message and link via Twitter')  "></i>
+    Facebook
   </a>
-  <a class="tab-item" href="#" ng-clic="twittear('Dolar compra', dolar.dolarCompra + 'Dolar venta ' + dolar.dolarVenta)">
-    <i class="icon ion-social-twitter"></i>
+  <a class="tab-item" href="#" ng-click="twitter('Dolar compra', dolar.dolarCompra + 'Dolar venta ' + dolar.dolarVenta)">
+    <i class="icon ion-social-twitter-outline"></i>
     Tweet
   </a>
   <a class="tab-item" href="#">
-    <i class="icon ion-ios7-upload"></i>
-    Share
+    <i class="icon ion-social-whatsapp-outline"></i>
+    Whatsapp
   </a>
 </div>
