@@ -1,14 +1,14 @@
 DolarHoy2
 =========
 
-###Actualizacion hibrida para Dolar Hoy
+###Hibrid actualization of Dolar Hoy
 
 ionic plugin add https://github.com/floatinghotpot/cordova-plugin-admob.git
 
 ionic plugin add https://github.com/VersoSolutions/CordovaClipboard
 
 
-###Set android in ionic
+###Set Android in ionic
 
 export ANDROID_HOME=/Applications/android-sdk-macosx
 export ANDROID_TOOLS=Applications/android-sdk-macosx/android-sdk/tools/
@@ -27,10 +27,10 @@ sudo ionic emulate ios
 cordova plugin add https://github.com/VersoSolutions/CordovaClipboard
 
 
-###Social Sharing
+###Social Sharing functionality
 
 cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
 
 ###The icons
 
-```www.ionicons.com
+[www.ionicons.com]
