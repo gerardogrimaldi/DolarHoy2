@@ -33,4 +33,4 @@ cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plug
 
 ###The icons
 
-[www.ionicons.com]
+```www.ionicons.com```
