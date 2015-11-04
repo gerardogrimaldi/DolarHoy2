@@ -1,6 +1,8 @@
 DolarHoy2
 =========
-
+###UPDATE
+ionic lib update
+ 
 ###Hibrid actualization of Dolar Hoy
 
 ionic plugin add https://github.com/floatinghotpot/cordova-plugin-admob.git
@@ -34,3 +36,4 @@ cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plug
 ###The icons
 
 ```www.ionicons.com```
+

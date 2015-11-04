@@ -1,15 +1,8 @@
 'use strict';
 
 angular.module('dolarHoy2.controllers', [])
-  .controller('DolarCtrl', function DolarCtrl($scope, $rootScope,
-                                              $ionicLoading,
-                                              $ionicActionSheet,
-                                              dolarService,
-                                              //$timeout,
-                                              $cordovaClipboard,
-                                              $window,
-                                              $cordovaDialogs,
-                                              $cordovaSocialSharing) {
+  .controller('DolarCtrl', function DolarCtrl($scope, $rootScope, $ionicLoading, $ionicActionSheet, dolarService, //$timeout,
+    $cordovaClipboard, $window, $cordovaDialogs, $cordovaSocialSharing) {
     //var scope = $rootScope;
     // Triggered on a button click, or some other target
     $scope.show = function (type, toCopyValue) {
@@ -71,12 +64,12 @@ angular.module('dolarHoy2.controllers', [])
     $scope.calcular = function (aCalcular) {
       if ($scope.dolar) {
         $scope.valores = {};
-        $scope.valores.oficial = (aCalcular * $scope.dolar.dolarVenta).toFixed(2);
-        $scope.valores.ahorro = aCalcular * (($scope.dolar.dolarVenta * 20) / 100);
-        $scope.valores.blue = aCalcular * $scope.dolar.dolarBlueCompra;
-        $scope.valores.tarjeta = aCalcular * $scope.dolar.dolarTarjeta;
-        $scope.valores.real = aCalcular * $scope.dolar.realVenta;
-        $scope.valores.euro = aCalcular * $scope.dolar.euroVenta;
+        $scope.valores.oficial = (aCalcular * Number($scope.dolar.dolarVenta)).toFixed(2);
+        $scope.valores.ahorro = (aCalcular * Number((($scope.dolar.dolarVenta * 20)) / 100)).toFixed(2);
+        $scope.valores.blue = (aCalcular * Number($scope.dolar.dolarBlueCompra)).toFixed(2);
+        $scope.valores.tarjeta = (aCalcular * Number($scope.dolar.dolarTarjeta)).toFixed(2);
+        $scope.valores.real = (aCalcular * Number($scope.dolar.realVenta)).toFixed(2);
+        $scope.valores.euro = (aCalcular * Number($scope.dolar.euroVenta)).toFixed(2);
       }
     };
 
