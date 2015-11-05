@@ -1,13 +1,19 @@
 DolarHoy2
 =========
+##Ionic install
+ 
+npm install -g ionic
+
+###Update
+
+ionic lib update
+
 ##Icons and splash screens
 http://blog.ionic.io/automating-icons-and-splash-screens/
 
 $ ionic resources --icon
 $ ionic resources --splash
 
-###UPDATE
-ionic lib update
  
 ###Hibrid actualization of Dolar Hoy
 

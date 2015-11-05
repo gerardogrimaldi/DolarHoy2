@@ -2,86 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3e6130-bed0-4cd6-b97d-566ea76ac748" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon.png" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\hooks\after_platform_add\010_install_plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\hooks\after_plugin_add\010_register_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\hooks\after_plugin_rm\010_deregister_plugin.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\hooks\after_prepare\010_add_platform_class.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\hooks\after_prepare\020_remove_sass_from_platforms.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\hooks\before_platform_add\init_directories.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\GooglePlay.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\GooglePlayFeature.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-land-hdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-land-ldpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-land-mdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-land-xhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-land-xxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-land-xxxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-port-hdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-port-ldpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-port-mdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-port-xhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-port-xxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-long-port-xxxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-land-hdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-land-ldpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-land-mdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-land-xhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-land-xxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-land-xxxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-port-hdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-port-ldpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-port-mdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-port-xhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-port-xxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\android\images\res-es-notlong-port-xxxhdpi\default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-60.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-60@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-60@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-72@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-76.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-76@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-Small-40.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-Small-40@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-Small-50.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-Small-50@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-Small.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-Small@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon-Small@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\appicon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\iTunesArtwork" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\iphone\iTunesArtwork@2x" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\mobileweb\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\mobileweb\apple_startup_images\Default-Landscape.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\mobileweb\apple_startup_images\Default-Landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\mobileweb\apple_startup_images\Default-Portrait.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\mobileweb\apple_startup_images\Default-Portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\mobileweb\apple_startup_images\Default.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\app\assets\mobileweb\apple_startup_images\Default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-568h@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-667h@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-Landscape-736h@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-Landscape.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-Landscape@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-Portrait-736h@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-Portrait.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default-Portrait@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\i18n\es\Default@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\iTunesConnect.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\platform\android\res\drawable-hdpi\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\platform\android\res\drawable-ldpi\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\platform\android\res\drawable-mdpi\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\platform\android\res\drawable-xhdpi\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\ico&amp;splash\platform\android\res\drawable-xxhdpi\appicon.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\img\ionic.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\css\ionic.app.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\README.md" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\css\ionic.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\css\ionic.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\fonts\ionicons.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\fonts\ionicons.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\fonts\ionicons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\fonts\ionicons.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\js\ionic-angular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\js\ionic-angular.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\js\ionic.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\js\ionic.bundle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\js\ionic.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\js\ionic.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_action-sheet.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_animations.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_backdrop.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_button-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_button.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_checkbox.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_form.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_items.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_loading.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_menu.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_modal.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_platform.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_popover.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_popup.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_radio.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_range.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_scaffolding.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_select.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_slide-box.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_split-pane.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_toggle.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_util.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\ionic.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\ionicons\_ionicons-animation.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\ionicons\_ionicons-font.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\ionicons\_ionicons-icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\ionicons\_ionicons-variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\lib\ionic\scss\ionicons\ionicons.scss" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\user2\Documents\GitHub\DolarHoy2\www\js\directives\shareBar.js" afterPath="$PROJECT_DIR$/www/js/directives/share-bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DolarHoy2.iml" afterPath="$PROJECT_DIR$/.idea/DolarHoy2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/scss/ionic.app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic.project" afterPath="$PROJECT_DIR$/ionic.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/menu.html" afterPath="$PROJECT_DIR$/www/templates/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DolarHoy2.iws" />
@@ -102,28 +89,7 @@
     <favorites_list name="DolarHoy2" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17200674">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,15 +98,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/plugins/android.json" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/templates/directives/shareBar.html" />
-        <option value="$PROJECT_DIR$/www/templates/dolar.html" />
-        <option value="$PROJECT_DIR$/www/templates/menu.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/www/templates/calculadora.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
+        <option value="$PROJECT_DIR$/www/templates/dolar.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers/controllers.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova.js" />
+        <option value="$PROJECT_DIR$/www/templates/menu.html" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -239,14 +207,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DolarHoy2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,26 +370,26 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24920969" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -356,11 +404,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -368,18 +426,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/calculadora.html">
+    <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <element signature="n#label#0;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#1;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#2;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#3;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#4;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#5;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-          </folding>
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -399,27 +458,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/directives/shareBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="74" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -438,20 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/directives/shareBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="74" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -464,49 +509,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/directives/shareBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="74" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/directives/shareBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="74" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -517,21 +519,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/directives/shareBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
@@ -541,31 +536,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/directives/shareBar.html">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -586,7 +567,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/directives/shareBar.js">
+    <entry file="file://$PROJECT_DIR$/www/js/directives/share-bar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8" />
@@ -600,112 +581,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/real.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/acerca.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/mapa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5151515">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/directives/shareBar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36042404">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/calculadora.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-          <folding>
-            <element signature="n#label#0;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#1;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#2;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#3;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#4;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-            <element signature="n#label#5;n#div#0;n#div#1;n#div#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/ionic.app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="6" selection-start-line="73" selection-start-column="6" selection-end-line="73" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/dolar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="27" column="98" selection-start-line="27" selection-start-column="98" selection-end-line="27" selection-end-column="98" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -716,21 +594,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15070923">
-          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17200674">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state vertical-scroll-proportion="-2.3448277">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ionic.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14991182">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova-mocks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.030303">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ngCordova/.bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6607774">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15828678">
+          <caret line="5" column="18" selection-start-line="3" selection-start-column="4" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33277026">
+          <caret line="11027" column="53" selection-start-line="11027" selection-start-column="53" selection-end-line="11027" selection-end-column="53" />
           <folding />
         </state>
       </provider>
