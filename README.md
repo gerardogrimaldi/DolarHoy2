@@ -1,5 +1,11 @@
 DolarHoy2
 =========
+##Icons and splash screens
+http://blog.ionic.io/automating-icons-and-splash-screens/
+
+$ ionic resources --icon
+$ ionic resources --splash
+
 ###UPDATE
 ionic lib update
  
