@@ -1,4 +1,12 @@
 {
-  "name": "DolarHoy2",
-  "app_id": "7c751818"
+  "name": "Dolar Hoy 2",
+  "app_id": "7c751818",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
 }

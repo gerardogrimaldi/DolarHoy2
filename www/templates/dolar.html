@@ -1,14 +1,11 @@
 <ion-view title="Dolar">
   <ion-nav-buttons side="left">
-    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
-
   <ion-content class="has-header">
-    <div class="card">
-      <div class="item item-divider">
-        <h1>Dolar Oficial</h1>
-      </div>
+    <div class="card item-dolar">
       <div class="item item-text-wrap">
+        <h1>Dolar Oficial</h1>
         <h2>
           <a href="#" ng-click="show('Dolar Compra', dolar.dolarCompra)" class="subdued" >&nbsp;Compra : $ {{ dolar.dolarCompra }}</a>
         </h2>
@@ -19,11 +16,9 @@
       <share-bar/>
     </div>
 
-    <div class="card">
-      <div class="item item-divider">
+    <div class="card item-dolar-blue">
+      <div class="item item-text-wrap">
         <h1>Dolar Blue/Paralelo</h1>
-      </div>
-      <div class="item" >
         <h2>
           <a href="#" ng-click="show('Dolar Blue Compra', dolar.dolarBlueCompra)" class="subdued" >&nbsp;Compra : $ {{ dolar.dolarBlueCompra }}</a>
         </h2>
@@ -34,11 +29,9 @@
       <share-bar/>
     </div>
 
-    <div class="card">
-      <div class="item item-divider">
+    <div class="card item-dolar-tarjeta">
+      <div class="item item-text-wrap">
         <h1>Dolar Tarjeta</h1>
-      </div>
-      <div class="item item-body item-text-wrap">
         <h2>
           <a href="#" ng-click="show('Dolar Tarjeta', dolar.dolarTarjeta)" class="subdued" >&nbsp;$ {{ dolar.dolarTarjeta }}</a>
         </h2>
@@ -46,11 +39,9 @@
       <share-bar/>
     </div>
 
-    <div class="card">
-      <div class="item item-divider">
+    <div class="card item-real">
+      <div class="item item-text-wrap">
         <h1>Real Oficial</h1>
-      </div>
-      <div class="item item-body item-text-wrap">
         <h2>
           <a href="#" ng-click="show('Real Compra')" class="subdued" >&nbsp;Compra : $ {{ dolar.realCompra }}</a>
         </h2>
@@ -61,11 +52,9 @@
       <share-bar/>
     </div>
 
-    <div class="card">
-      <div class="item item-divider">
+    <div class="card item-euro">
+      <div class="item item-text-wrap">
         <h1>Euro Oficial</h1>
-      </div>
-      <div class="item item-body item-text-wrap">
         <h2>
           <a href="#" ng-click="show('Euro Compra')" class="subdued" >&nbsp;Compra : $ {{ dolar.euroCompra }}</a>
         </h2>

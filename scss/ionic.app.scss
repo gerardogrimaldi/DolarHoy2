@@ -8,7 +8,7 @@ $light:                           #fff !default;
 $stable:                          #f8f8f8 !default;
 $positive:                        #387ef5 !default;
 $calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
+$balanced:                        #19662F !default;
 $energized:                       #ffc900 !default;
 $assertive:                       #ef473a !default;
 $royal:                           #886aea !default;
@@ -19,5 +19,21 @@ $dark:                            #444 !default;
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+@import "www/lib/ionic/scss/ionic.scss";
+
+.item-dolar {
+  border-top: solid #19662F thick;
+}
+.item-dolar-blue {
+  border-top: solid #11c1f3 thick;
+}
+.item-dolar-tarjeta {
+  border-top: solid #ef473a thick;
+}
+.item-real {
+  border-top: solid #ffc900 thick;
+}
+.item-euro {
+  border-top: solid #886aea thick;
+}
 

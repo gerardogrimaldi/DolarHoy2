@@ -1,5 +1,5 @@
 /*
-Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.
+Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.scss.
               Load path: C:/Users/user2/Documents/GitHub/DolarHoy2/scss
         on line 22 of ionic.app.scss
 
@@ -8,7 +8,12 @@ Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.
 19: $ionicons-font-path: "../lib/ionic/fonts" !default;
 20: 
 21: // Include all of Ionic
-22: @import "www/lib/ionic/scss/ionic";
+22: @import "www/lib/ionic/scss/ionic.scss";
+23: 
+24: .item-dolar {
+25:   border-top: solid #19662F thick;
+26: }
+27: .item-dolar-blue {
 
 Backtrace:
 ionic.app.scss:22
@@ -49,4 +54,4 @@ C:/Ruby200-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.\A               Load path: C:/Users/user2/Documents/GitHub/DolarHoy2/scss\A         on line 22 of ionic.app.scss\A \A 17: \A 18: // The path for our ionicons font files, relative to the built CSS in www/css\A 19: $ionicons-font-path: \"../lib/ionic/fonts\" !default;\A 20: \A 21: // Include all of Ionic\A 22: @import \"www/lib/ionic/scss/ionic\";"; }
+  content: "Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.scss.\A               Load path: C:/Users/user2/Documents/GitHub/DolarHoy2/scss\A         on line 22 of ionic.app.scss\A \A 17: \A 18: // The path for our ionicons font files, relative to the built CSS in www/css\A 19: $ionicons-font-path: \"../lib/ionic/fonts\" !default;\A 20: \A 21: // Include all of Ionic\A 22: @import \"www/lib/ionic/scss/ionic.scss\";\A 23: \A 24: .item-dolar {\A 25:   border-top: solid #19662F thick;\A 26: }\A 27: .item-dolar-blue {"; }

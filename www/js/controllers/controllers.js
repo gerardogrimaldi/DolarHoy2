@@ -9,9 +9,7 @@ angular.module('dolarHoy2.controllers', [])
       // Show the action sheet
       $scope.toCopyValue = toCopyValue;
       var hideSheet = $ionicActionSheet.show({
-        buttons: [
-          {text: '<b>Copiar</b>'}
-        ],
+        buttons: [ {text: '<b>Copiar</b>'} ],
         titleText: 'Copiar Valores de ' + type, cancelText: 'Cancel',
         cancel: function () {
           hideSheet();
@@ -48,12 +46,14 @@ angular.module('dolarHoy2.controllers', [])
     $scope.load = function () {
       $scope.loading = true;
       $ionicLoading.show({
-        template: 'Actualizando datos...'
+        template: '<p>Actualizando datos...</p><ion-spinner></ion-spinner>'
       });
-      dolarService.getData().then(function (data) {
-        $scope.dolar = data;
-        $scope.hide();
-      });
+      dolarService
+        .getData()
+        .then(function (data) {
+          $scope.dolar = data;
+          $scope.hide();
+        });
     };
 
     $scope.hide = function () {
@@ -62,14 +62,17 @@ angular.module('dolarHoy2.controllers', [])
     };
 
     $scope.calcular = function (aCalcular) {
+      if (isNaN(aCalcular)) {
+        aCalcular = 0;
+      }
       if ($scope.dolar) {
         $scope.valores = {};
-        $scope.valores.oficial = (aCalcular * Number($scope.dolar.dolarVenta)).toFixed(2);
-        $scope.valores.ahorro = (aCalcular * Number((($scope.dolar.dolarVenta * 20)) / 100)).toFixed(2);
-        $scope.valores.blue = (aCalcular * Number($scope.dolar.dolarBlueCompra)).toFixed(2);
-        $scope.valores.tarjeta = (aCalcular * Number($scope.dolar.dolarTarjeta)).toFixed(2);
-        $scope.valores.real = (aCalcular * Number($scope.dolar.realVenta)).toFixed(2);
-        $scope.valores.euro = (aCalcular * Number($scope.dolar.euroVenta)).toFixed(2);
+        $scope.valores.oficial  = (aCalcular * Number($scope.dolar.dolarVenta)).toFixed(2);
+        $scope.valores.ahorro   = (aCalcular * Number((($scope.dolar.dolarVenta * 20)) / 100)).toFixed(2);
+        $scope.valores.blue     = (aCalcular * Number($scope.dolar.dolarBlueCompra)).toFixed(2);
+        $scope.valores.tarjeta  = (aCalcular * Number($scope.dolar.dolarTarjeta)).toFixed(2);
+        $scope.valores.real     = (aCalcular * Number($scope.dolar.realVenta)).toFixed(2);
+        $scope.valores.euro     = (aCalcular * Number($scope.dolar.euroVenta)).toFixed(2);
       }
     };
 

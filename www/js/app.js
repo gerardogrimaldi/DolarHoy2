@@ -72,11 +72,11 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers', 'ngCordova'])
       }
     })
 
-    .state('app.mapa', {
-      url: "/mapa",
+    .state('app.map', {
+      url: "/map",
       views: {
         'menuContent' :{
-          templateUrl: "templates/mapa.html",
+          templateUrl: "templates/map.html",
           controller: 'DolarCtrl'
         }
       }

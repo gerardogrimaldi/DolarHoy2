@@ -2,11 +2,9 @@
 
   <ion-pane ion-side-menu-content>
     <ion-nav-bar class="bar-stable nav-title-slide-ios7">
-
     </ion-nav-bar>
     <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
   </ion-pane>
-{{valores.oficial}}
   <ion-side-menu side="left" expose-aside-when="large">
     <header class="bar bar-header bar-balanced">
       <h1 class="title">Dolar Hoy 2.1</h1>
@@ -18,14 +16,14 @@
           Dolar
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/calculadora">
-          <i class="icon ion-ios7-calculator"></i>
+          <i class="icon ion-calculator"></i>
           Calculadora
         </ion-item>
         <ion-item nav-clear menu-close ng-click="load()">
           <i class="icon" ng-class="loading ? 'ion-looping' : 'ion-loop'"></i>
           Recargar
         </ion-item>
-        <ion-item nav-clear menu-close>
+        <ion-item nav-clear menu-close href="#/app/map">
           <i class="icon ion-map"></i>
           Mapa
         </ion-item>
