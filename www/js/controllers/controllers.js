@@ -2,7 +2,7 @@
 
 angular.module('dolarHoy2.controllers', [])
   .controller('DolarCtrl', function DolarCtrl($scope, $rootScope, $ionicLoading, $ionicActionSheet, dolarService, //$timeout,
-    $cordovaClipboard, $window, $cordovaDialogs, $cordovaSocialSharing) {
+    $cordovaClipboard, $window, $cordovaDialogs, $cordovaSocialSharing, $email, $ionicPopup) {
     //var scope = $rootScope;
     // Triggered on a button click, or some other target
     $scope.show = function (type, toCopyValue) {
@@ -116,4 +116,24 @@ angular.module('dolarHoy2.controllers', [])
           $ionicLoading.hide();
         });
     };
+
+    $scope.sendEmail = function(name, email, message) {
+      debugger;
+      if ($scope.name && $scope.email && $scope.message) {
+        $scope.showAlert = function() {
+          $ionicPopup.alert({
+            template: 'Ingrese todos los campos para enviar...'
+          });
+        };
+      }
+
+      $ionicLoading.show({
+        template: 'Enviando...'
+      });
+
+      $email.$send(null, null, null, message, email, name, null, null);
+
+
+      $ionicLoading.hide();
+    }
 });

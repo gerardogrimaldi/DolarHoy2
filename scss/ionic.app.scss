@@ -21,6 +21,16 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic.scss";
 
+$balanced: #19662F !default;
+
+.padding {
+  padding: 10px;
+}
+
+.response-textarea {
+  height: 120px;
+}
+
 .item-dolar {
   border-top: solid #19662F thick;
 }

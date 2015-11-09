@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers', 'ngCordova'])
+angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova','ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -52,21 +52,21 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers', 'ngCordova'])
       controller: 'DolarCtrl'
     })
 
-    .state('app.dolar', {
-      url: "/dolar",
+    .state('app.dollar', {
+      url: "/dollar",
       views: {
         'menuContent' :{
-          templateUrl: "templates/dolar.html",
+          templateUrl: "templates/dollar.html",
           controller: 'DolarCtrl'
         }
       }
     })
 
-    .state('app.calculadora', {
-      url: "/calculadora",
+    .state('app.calc', {
+      url: "/calc",
       views: {
         'menuContent' :{
-          templateUrl: "templates/calculadora.html",
+          templateUrl: "templates/calc.html",
           controller: 'DolarCtrl'
         }
       }
@@ -82,15 +82,15 @@ angular.module('dolarhoy2', ['ionic', 'dolarHoy2.controllers', 'ngCordova'])
       }
     })
 
-    .state('app.contacto', {
-      url: "/contacto",
+    .state('app.contact', {
+      url: "/contact",
       views: {
         'menuContent' :{
-          templateUrl: "templates/contacto.html",
+          templateUrl: "templates/contact.html",
           controller: 'DolarCtrl'
         }
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/dolar');
+  $urlRouterProvider.otherwise('/app/dollar');
 });

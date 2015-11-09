@@ -1,0 +1,24 @@
+<ion-view title="Contacto">
+  <ion-nav-buttons side="right">
+    <button menu-toggle="right"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Nombre</span>
+        <input type="text" placeholder="Juan Carlos" ng-model="name">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="juan_k@gmail.com" ng-model="email">
+      </label>
+      <label class=" item item-input item-stacked-label response-textarea">
+        <span class="input-label">Mensaje</span>
+        <textarea placeholder="Buenas tardes..." ng-model="message"></textarea>
+      </label>
+      <div class="padding">
+        <button class="button button-block button-positive" ng-click="sendEmail(name, email, message)">Enviar consulta</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

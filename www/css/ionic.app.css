@@ -9082,6 +9082,12 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+.padding {
+  padding: 10px; }
+
+.response-textarea {
+  height: 120px; }
+
 .item-dolar {
   border-top: solid #19662F thick; }
 
