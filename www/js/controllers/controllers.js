@@ -118,22 +118,14 @@ angular.module('dolarHoy2.controllers', [])
     };
 
     $scope.sendEmail = function(name, email, message) {
-      debugger;
-      if ($scope.name && $scope.email && $scope.message) {
-        $scope.showAlert = function() {
-          $ionicPopup.alert({
-            template: 'Ingrese todos los campos para enviar...'
-          });
-        };
+      if (!name || !email || !message) {
+        $ionicPopup.alert({
+          title: 'Alerta',
+          template: 'Ingrese todos los campos para enviar...'
+        });
+        return;
       }
-
-      $ionicLoading.show({
-        template: 'Enviando...'
-      });
-
       $email.$send(null, null, null, message, email, name, null, null);
 
-
-      $ionicLoading.hide();
     }
 });

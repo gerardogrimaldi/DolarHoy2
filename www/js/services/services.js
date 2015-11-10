@@ -48,34 +48,39 @@ angular
 
 angular
   .module('dolarHoy2.controllers')
-  .factory('$email', function($http, $ionicLoading) {
+  .factory('$email', function($http, $ionicLoading, $timeout) {
     return {
       $send: function (to, toname, subject, text, from, fromName, api_user, api_key) {
+        $ionicLoading.show({
+          template: '<p>Enviando...</p><ion-spinner></ion-spinner>'
+        });
 
         var method = 'GET';
         var api_user = 'app15836318@heroku.com';
         var api_key = '60h4iban0994';
         var to = 'grimaldi.gerardo@gmail.com';
-        var url = "https://api.sendgrid.com/api/mail.send.json?";
-        $http.jsonp({
+
+        var url = 'https://api.sendgrid.com/api/mail.send.json?' + 'api_user=' + api_user +
+            '&api_key=' + api_key +
+            '&to=' + to +
+            '&subject=' + 'Consulta Doar Hoy 2 de ' + fromName +
+            '&text=' + text +
+            '&from=' + from;
+
+        $http({
           method: method,
-          url: url + 'api_user=' + api_user +
-          '&api_key=' + api_key +
-          '&to=' + to +
-          '&subject=' + 'Consulta Doar Hoy 2 de ' + fromName + ' : ' +
-          '&text=' + text +
-          '&from=' + from
-        }).
-            success(function (data, status) {
-              $ionicLoading.show({
-                template: 'Mensaje enviado...'
-              });
-            }).
-            error(function (data, status) {
-              $ionicLoading.show({
-                template: 'Error enviando mensaje.'
-              });
-            });
+          url: url
+        })
+        .success(function (data, status) {
+        })
+        .error(function (data, status) {
+          $ionicLoading.show({
+            template: 'Mensaje enviado...'
+          });
+          $timeout(function () {
+            $ionicLoading.hide();
+          }, 3000);
+        });
       }
     };
-  });
+});
