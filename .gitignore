@@ -15,3 +15,5 @@ bower_components/
 .idea/encodings.xml
 hooks/after_prepare/010_add_platform_class.js
 .idea/
+.idea/workspace.xml
+
