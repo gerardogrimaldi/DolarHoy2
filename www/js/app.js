@@ -19,7 +19,7 @@ angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'ionic'])
       StatusBar.styleDefault();
     }
     if(window.plugins && window.plugins.AdMob) {
-      var admob_key = device.platform == 'Android' ? 'UA-41243014-3' : 'ca-app-pub-9034277405854547/8557728608';
+      var admob_key = device.platform == 'Android' ? 'ca-app-pub-9034277405854547/8557728608' : 'ca-app-pub-9034277405854547/8387680207';
       var admob = window.plugins.AdMob;
       console.log(admob_key);
       admob.createBannerView({
