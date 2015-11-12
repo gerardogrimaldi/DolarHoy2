@@ -1,3 +1,4 @@
+'use strict';
 angular
   .module('dolarHoy2.controllers')
   .service('dolarServiceOld', function() {

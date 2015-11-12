@@ -2,15 +2,15 @@
 
 angular.module('dolarHoy2.controllers', [])
   .controller('DolarCtrl', function DolarCtrl($scope, $rootScope, $ionicLoading, $ionicActionSheet, dolarService, //$timeout,
-    $cordovaClipboard, $window, $cordovaDialogs, $cordovaSocialSharing, $email, $ionicPopup) {
+    $cordovaClipboard, $window, $cordovaDialogs, $email, $ionicPopup) {
     //var scope = $rootScope;
     // Triggered on a button click, or some other target
-    $scope.show = function (type, toCopyValue) {
-      // Show the action sheet
+    $scope.copy = function (type, toCopyValue) {
       $scope.toCopyValue = toCopyValue;
       var hideSheet = $ionicActionSheet.show({
-        buttons: [ {text: '<b>Copiar</b>'} ],
-        titleText: 'Copiar Valores de ' + type, cancelText: 'Cancel',
+        buttons: [ {text: '<b>Copiar Valor</b>'} ],
+        titleText: 'Copiar Valores de ' + type,
+        cancelText: 'Cancel',
         cancel: function () {
           hideSheet();
         },
@@ -77,45 +77,6 @@ angular.module('dolarHoy2.controllers', [])
     };
 
     $scope.$watch('aCalcular', $scope.calcular());
-
-    $scope.shareViaTwitter = function (message, image, link) {
-      $ionicLoading.show({
-        template: 'Compartiendo...'
-      });
-      $cordovaSocialSharing
-          .shareViaTwitter('Los valores de hoy del dolar son ' + message)
-          .then(function (result) {
-            $ionicLoading.hide();
-          }, function (err) {
-            $ionicLoading.hide();
-          });
-    };
-
-    $scope.shareViaWhatsapp = function (message, image, link) {
-      $ionicLoading.show({
-        template: 'Compartiendo...'
-      });
-      $cordovaSocialSharing
-          .shareViaWhatsApp(message, image, link)
-          .then(function (result) {
-            $ionicLoading.hide();
-          }, function (err) {
-            $ionicLoading.hide();
-          });
-    };
-
-    $scope.shareViaFacebook = function (message, image, link) {
-      $ionicLoading.show({
-        template: 'Compartiendo...'
-      });
-      $cordovaSocialSharing
-        .shareViaFacebook(message, image, link)
-        .then(function (result) {
-          $ionicLoading.hide();
-        }, function (err) {
-          $ionicLoading.hide();
-        });
-    };
 
     $scope.sendEmail = function(name, email, message) {
       if (!name || !email || !message) {

@@ -1,5 +1,6 @@
 DolarHoy2
 =========
+
 ##Ionic install
  
 npm install -g ionic
@@ -17,9 +18,12 @@ $ ionic resources --splash
  
 ###Hibrid actualization of Dolar Hoy
 
+#ADMOB
 ionic plugin add https://github.com/floatinghotpot/cordova-plugin-admob.git
 
-ionic plugin add https://github.com/VersoSolutions/CordovaClipboard
+ionic plugin add https://github.com/VersoSolutions/CordovaClipboard.git
+
+ionic plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git
 
 
 ###Set Android in ionic
@@ -49,3 +53,6 @@ cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plug
 
 ```www.ionicons.com```
 
+###Ionic Setup SASS
+
+ionic setup sass

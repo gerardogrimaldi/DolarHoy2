@@ -15,6 +15,11 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
-    "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git"
-  ]
+    "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
+    {
+      "locator": "https://github.com/VersoSolutions/CordovaClipboard.git",
+      "id": "com.verso.cordova.clipboard"
+    }
+  ],
+  "cordovaPlatforms": []
 }

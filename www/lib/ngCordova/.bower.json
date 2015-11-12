@@ -1,6 +1,6 @@
 {
   "name": "ngCordova",
-  "version": "0.1.5-alpha",
+  "version": "0.1.23-alpha",
   "homepage": "http://ngCordova.com/",
   "authors": [
     "Max Lynch <max@drifty.com>",
@@ -18,13 +18,17 @@
     "src",
     "config",
     "demo",
-    "CONTRIBUTING.md"
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md"
   ],
   "dependencies": {
-    "angular": "1.2.23"
+    "angular": ">= 1.2.23"
   },
   "keywords": [
     "ngCordova",
+    "ng-cordova",
+    "ngcordova",
+    "ng cordova",
     "cordova",
     "phonegap",
     "angular",
@@ -35,18 +39,17 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "angular": "~1.2.23",
-    "angular-mocks": "~1.2.23",
+    "angular": ">= 1.2.23",
+    "angular-mocks": ">= 1.2.23",
     "jquery": "~2.1.1"
   },
-  "_release": "0.1.5-alpha",
+  "_release": "0.1.23-alpha",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.5-alpha",
-    "commit": "328a198ae0e2989951690adb9a37a48c2d2a5f48"
+    "tag": "v0.1.23-alpha",
+    "commit": "c4afa3dbbb80b15eded760e039cd2d69da891502"
   },
   "_source": "git://github.com/driftyco/ng-cordova.git",
   "_target": "~0.1.5-alpha",
-  "_originalSource": "ngCordova",
-  "_direct": true
+  "_originalSource": "ngCordova"
 }
