@@ -15,7 +15,6 @@ http://blog.ionic.io/automating-icons-and-splash-screens/
 $ ionic resources --icon
 $ ionic resources --splash
 
- 
 ###Hibrid actualization of Dolar Hoy
 
 #ADMOB
