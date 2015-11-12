@@ -13,7 +13,7 @@
           <a href="#" ng-click="copy('Dolar Venta', dolar.dolarVenta)" class="subdued" >&nbsp;Venta : $ {{ dolar.dolarVenta }}</a>
         </h2>
       </div>
-      <share-bar type="Dolar Oficial" compra="dolar.dolarCompra" venta="dolar.dolarVenta"/>
+      <share-bar type="Dolar Oficial" compra="{{ dolar.dolarCompra }}" venta="{{ dolar.dolarVenta }}"/>
     </div>
 
     <div class="card item-dolar-blue">
@@ -26,7 +26,7 @@
           <a href="#" ng-click="copy('Dolar Blue Venta', dolar.dolarBlueVenta)" class="subdued" >&nbsp;Venta : $ {{ dolar.dolarBlueVenta }}</a>
         </h2>
       </div>
-      <share-bar type="Dolar Blue/Paralelo" compra="dolar.dolarBlueCompra" venta="dolar.dolarBlueVenta"/>
+      <share-bar type="Dolar Blue/Paralelo" compra="{{  dolar.dolarBlueCompra }}" venta="{{ dolar.dolarBlueVenta }}"/>
     </div>
 
     <div class="card item-dolar-tarjeta">
@@ -36,7 +36,7 @@
           <a href="#" ng-click="copy('Dolar Tarjeta', dolar.dolarTarjeta)" class="subdued" >&nbsp;$ {{ dolar.dolarTarjeta }}</a>
         </h2>
       </div>
-      <share-bar unico="dolar.dolarTarjeta"/>
+      <share-bar unico="{{ dolar.dolarTarjeta }}"/>
     </div>
 
     <div class="card item-real">
@@ -49,7 +49,7 @@
           <a href="#" ng-click="copy('Real Compra', dolar.realVenta)" class="subdued" >&nbsp;Venta : $ {{ dolar.realVenta }}</a>
         </h2>
       </div>
-      <share-bar type="Real Oficial" compra="dolar.realCompra" venta="dolar.realVenta"/>
+      <share-bar type="Real Oficial" compra="{{ dolar.realCompra }}" venta="{{ dolar.realVenta }}"/>
     </div>
 
     <div class="card item-euro">
@@ -62,7 +62,7 @@
           <a href="#" ng-click="copy('Euro Compra', dolar.euroVenta)" class="subdued" >&nbsp;Venta : $ {{ dolar.euroVenta }}</a>
         </h2>
       </div>
-      <share-bar type="Euro Oficial" compra="dolar.euroCompra" venta="dolar.euroVenta"/>
+      <share-bar type="Euro Oficial" compra="{{ dolar.euroCompra }}" venta="{{ dolar.euroVenta }}"/>
     </div>
     
   </ion-content>

@@ -15,8 +15,8 @@ angular
         link: function (scope, element, attrs) {
 
           var makeMessage = function() {
-            return (!unico) ? 'Los valores de hoy del ' + type + ' son ' + 'Dolar compra ' + scope.compra + ' Dolar' +
-            ' venta ' + scope.venta : 'El valor del dolar tarjeta es ' + scope.unico
+            return (!scope.unico) ? 'Los valores de hoy del ' + scope.type + ' son valor compra ' + scope.compra + ' y valor' +
+            ' venta ' + scope.venta + '.' : 'El valor del dolar tarjeta  es ' + scope.unico + '.';
           };
 
           scope.shareViaFacebook = function (message, image, link) {
