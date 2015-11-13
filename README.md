@@ -55,3 +55,28 @@ cordova plugin add https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plug
 ###Ionic Setup SASS
 
 ionic setup sass
+
+###Deploy APK
+
+##Rename
+http://forum.ionicframework.com/t/renaming-android-build-apk-from-cordovaapp-to-your-app-name/15416
+
+#Pre build
+bower install && npm install
+
+cordova plugin rm org.apache.cordova.console && 
+
+cordova build --release android && 
+
+#MACOSX
+keytool -genkey -v -keystore dolarhoy2.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 && 
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore C:\Users\user2\Documents\GitHub\DolarHoy2\dolarhoy2.keystore  C:\Users\user2\Documents\GitHub\DolarHoy2\platforms\android\build\outputs\apk\android-release-unsigned.apk alias_name && 
+
+C:\Users\user2\android-sdk\build-tools\22.0.1\zipalign -v 4 C:/Users/user2/Documents/GitHub/DolarHoy2/platforms/android/build/outputs/apk/android-release-unsigned.apk mascoteros-release.apk 
+
+
+###ANDROID HOME
+export ANDROID_HOME=/Applications/android-sdk-macosx export ANDROID_TOOLS=Applications/android-sdk-macosx/android-sdk/tools/ 
+
+export ANDROID_PLATFORM_TOOLS=Applications/android-sdk-macosx/platform-tools/ PATH=$PATH:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:.
