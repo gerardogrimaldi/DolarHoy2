@@ -5,7 +5,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'ionic'])
+angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'chart.js', 'ionic'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -46,7 +46,10 @@ angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'ionic'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+
+  delete $httpProvider.defaults.headers.common['X-Requested-With'];
+
   $stateProvider
 
     .state('app', {
@@ -76,6 +79,16 @@ angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'ionic'])
       }
     })
 
+    .state('app.result', {
+      url: "/result",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/result.html",
+          controller: 'DolarCtrl'
+        }
+      }
+    })
+
     .state('app.map', {
       url: "/map",
       views: {
@@ -94,7 +107,17 @@ angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'ionic'])
           controller: 'DolarCtrl'
         }
       }
-    });
+    })
+    .state('app.graph', {
+      url: "/graph",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/graph.html",
+          controller: 'DolarCtrl'
+        }
+      }
+    })
+  ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/dollar');
 });
