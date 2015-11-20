@@ -97,15 +97,12 @@ angular.module('dolarHoy2.controllers', [])
     };
 
     scope.startGraph = function(){
-      debugger;
       ambitoService
-        .graphDolarAhorro()
+        .graphDolarOficial()
         .then(function(data) {
-          debugger;
-            scope.graph ='bien';
+          scope.graph ='bien';
         },
         function(data) {
-          debugger;
           scope.graph ='como el orto';
         });
       /*scope.labels = ['2015/11/16', '2015/11/13', '2015/11/12', '2015/11/11', '2015/11/10', '2015/11/09'];
