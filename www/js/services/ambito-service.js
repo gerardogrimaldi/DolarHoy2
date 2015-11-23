@@ -5,16 +5,16 @@ angular
   .factory('ambitoService', function($http) {
     return {
       graphDolarOficial: function () {
-        return $http.get('http://localhost:3000/dolarGraph/Hola123!');
-      }//,
-      /*graphDolarBlue: function () {
-        return $http.get('http://www.ambito.com/economia/mercados/monedas/x_monedas_get_grafico.asp?ric=ARSB=&tipo=ww&from=modulo_mercados');
+        return $http.get('https://dolarhoyapi.herokuapp.com/dolar-graph/Hola123!');
+      },
+      graphDolarBlue: function () {
+        return $http.get('http://dolarhoyapi.herokuapp.com/dolar-blue-graph/Hola123!');
       },
       graphDolarTarjeta: function () {
-        return $http.get('http://www.ambito.com/economia/mercados/monedas/x_monedas_get_grafico.asp?ric=ARSSCBCRA=DT&tipo=ww&from=modulo_mercados');
+        return $http.get('http://dolarhoyapi.herokuapp.com/dolar-tarjeta-graph/Hola123!');
       },
       graphDolarAhorro: function () {
-        return $http.get('http://www.ambito.com/economia/mercados/monedas/x_monedas_get_grafico.asp?ric=ARSSCBCRA=TE&tipo=ww&from=modulo_mercados');
-      }*/
+        return $http.get('http://dolarhoyapi.herokuapp.com/dolar-ahorro-graph/Hola123!');
+      }
     }
   });

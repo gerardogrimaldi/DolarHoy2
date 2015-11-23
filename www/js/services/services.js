@@ -6,7 +6,7 @@ angular
       this.dolar = {};
 
       this.initDolar = function () {
-        $http.get('http://dolarhoyserver.herokuapp.com/dolar/Hola123!')
+        $http.get('http://dolarhoyapi.herokuapp.com/dolar/Hola123!')
             .success(function (data) {
               that.dolar = data.dolar;
             })
@@ -24,7 +24,7 @@ angular
   .module('dolarHoy2.controllers')
   .factory('dolarFactory', function($http) {
       return $http
-          .get('http://dolarhoyserver.herokuapp.com/dolar/Hola123!')
+          .get('http://dolarhoyapi.herokuapp.com/dolar/Hola123!')
           .success(function (data) {
             return JSON.parse(data);
           })
@@ -39,7 +39,7 @@ angular
   .module('dolarHoy2.controllers')
   .service('dolarService', function($q, $compile, $http) {
     this.getData = function() {
-      var promise = $http.get('http://dolarhoyserver.herokuapp.com/dolar/Hola123!');
+      var promise = $http.get('http://dolarhoyapi.herokuapp.com/dolar/Hola123!');
       promise = promise.then(function (response) {
         return response.data;
       });
