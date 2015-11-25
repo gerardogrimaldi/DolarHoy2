@@ -62,6 +62,7 @@ angular.module('dolarHoy2.controllers', [])
       };
 
       scope.calculate = function (toCalc) {
+        $state.go('app.result');
         if (toCalc) {
           if (isNaN(toCalc)) {
             toCalc = 0;
@@ -69,7 +70,6 @@ angular.module('dolarHoy2.controllers', [])
 
           if (scope.dolar) {
 
-            $state.go('app.result');
             scope.valores = {};
             scope.valores.oficial = (toCalc * Number(scope.dolar.dolarVenta)).toFixed(2);
             scope.valores.ahorro = (toCalc * Number(((scope.dolar.dolarVenta * 20)) / 100)).toFixed(2);
