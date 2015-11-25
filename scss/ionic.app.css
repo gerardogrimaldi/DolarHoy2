@@ -1,22 +1,22 @@
 /*
 Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.scss.
               Load path: C:/Users/user2/Documents/GitHub/DolarHoy2/scss
-        on line 22 of ionic.app.scss
+        on line 24 of ionic.app.scss
 
-17: 
-18: // The path for our ionicons font files, relative to the built CSS in www/css
-19: $ionicons-font-path: "../lib/ionic/fonts" !default;
-20: 
-21: // Include all of Ionic
-22: @import "www/lib/ionic/scss/ionic.scss";
-23: 
-24: $balanced: #19662F !default;
+19: 
+20: // The path for our ionicons font files, relative to the built CSS in www/css
+21: $ionicons-font-path: "../lib/ionic/fonts" !default;
+22: 
+23: // Include all of Ionic
+24: @import "www/lib/ionic/scss/ionic.scss";
 25: 
-26: .padding {
-27:   padding: 10px;
+26: .item-dolar {
+27:   border-top: solid #19662F thick;
+28: }
+29: .item-dolar-blue {
 
 Backtrace:
-ionic.app.scss:22
+ionic.app.scss:24
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -54,4 +54,4 @@ C:/Ruby200-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.scss.\A               Load path: C:/Users/user2/Documents/GitHub/DolarHoy2/scss\A         on line 22 of ionic.app.scss\A \A 17: \A 18: // The path for our ionicons font files, relative to the built CSS in www/css\A 19: $ionicons-font-path: \"../lib/ionic/fonts\" !default;\A 20: \A 21: // Include all of Ionic\A 22: @import \"www/lib/ionic/scss/ionic.scss\";\A 23: \A 24: $balanced: #19662F !default;\A 25: \A 26: .padding {\A 27:   padding: 10px;"; }
+  content: "Syntax error: File to import not found or unreadable: www/lib/ionic/scss/ionic.scss.\A               Load path: C:/Users/user2/Documents/GitHub/DolarHoy2/scss\A         on line 24 of ionic.app.scss\A \A 19: \A 20: // The path for our ionicons font files, relative to the built CSS in www/css\A 21: $ionicons-font-path: \"../lib/ionic/fonts\" !default;\A 22: \A 23: // Include all of Ionic\A 24: @import \"www/lib/ionic/scss/ionic.scss\";\A 25: \A 26: .item-dolar {\A 27:   border-top: solid #19662F thick;\A 28: }\A 29: .item-dolar-blue {"; }

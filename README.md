@@ -68,7 +68,17 @@ cordova plugin rm org.apache.cordova.console &&
 
 cordova build --release android && 
 
-#MACOSX
+
+#MAC OSX //TODO
+keytool -genkey -v -keystore dolarhoy2.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 && 
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore C:\Users\user2\Documents\GitHub\DolarHoy2\dolarhoy2.keystore  C:\Users\user2\Documents\GitHub\DolarHoy2\platforms\android\build\outputs\apk\android-release-unsigned.apk alias_name && 
+
+C:\Users\user2\android-sdk\build-tools\22.0.1\zipalign -v 4 
+C:/Users/user2/Documents/GitHub/DolarHoy2/platforms/android/build/outputs/apk/android-release-unsigned.apk dolarhoy2-release.apk 
+
+
+#WINDOWS
 keytool -genkey -v -keystore dolarhoy2.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 && 
 
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore C:\Users\user2\Documents\GitHub\DolarHoy2\dolarhoy2.keystore  C:\Users\user2\Documents\GitHub\DolarHoy2\platforms\android\build\outputs\apk\android-release-unsigned.apk alias_name && 

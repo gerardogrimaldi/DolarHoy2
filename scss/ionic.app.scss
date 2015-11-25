@@ -15,21 +15,13 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
+$balanced: #19662F !default;
+
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic.scss";
-
-$balanced: #19662F !default;
-
-.padding {
-  padding: 10px;
-}
-
-.response-textarea {
-  height: 120px;
-}
 
 .item-dolar {
   border-top: solid #19662F thick;
@@ -47,3 +39,10 @@ $balanced: #19662F !default;
   border-top: solid #886aea thick;
 }
 
+.padding {
+  padding: 10px;
+}
+
+.response-textarea {
+  height: 120px;
+}
