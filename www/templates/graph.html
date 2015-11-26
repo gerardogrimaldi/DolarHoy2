@@ -1,23 +1,21 @@
-<ion-view title="Grafico de Tendencia">
+<ion-view title="Grafico de Tendencia" ng-init="startGraph()">
   <ion-nav-buttons side="left">
     <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
 
-  <div class="card item-dolar">
-    <div class="item item-text-wrap">
-      <div class="row">
-        <div class="col col-5"></div>
-        <div class="col col-90">
-          <h4>{{seriesDolarOficial[0]}}</h4>
-          <canvas id="dolarOficial" class="chart chart-line" chart-data="dataDolarOficial" chart-labels="labelsDolarOficial"
-                  chart-legend="true" chart-series="seriesDolarOficial" chart-click="onClick"
-                  chart-options="optionsDolarOficial" chart-colours="coloursDolarOficial"></canvas>
-        </div>
-        <div class="col col-5"></div>
+
+    <div class="row">
+      <div class="col col-5"></div>
+      <div class="col col-90">
+        <h4>{{seriesDolarOficial[0]}}</h4>
+        <canvas id="dolarOficial" class="chart chart-line" chart-data="dataDolarOficial" chart-labels="labelsDolarOficial"
+                chart-legend="true" chart-series="seriesDolarOficial" chart-click="onClick"
+                chart-options="optionsDolarOficial" chart-colours="coloursDolarOficial"></canvas>
       </div>
+      <div class="col col-5"></div>
     </div>
-  </div>
+
 
 
     <div class="row">

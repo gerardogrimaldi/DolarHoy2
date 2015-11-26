@@ -49,11 +49,11 @@ angular.module('dolarHoy2.controllers', [])
           template: '<p>Actualizando datos...</p><ion-spinner></ion-spinner>'
         });
         dolarService
-            .getData()
-            .then(function (data) {
-              scope.dolar = data;
-              scope.hide();
-            });
+          .getData()
+          .then(function (data) {
+            scope.dolar = data;
+            scope.hide();
+          });
       };
 
       scope.hide = function () {
@@ -61,15 +61,13 @@ angular.module('dolarHoy2.controllers', [])
         $ionicLoading.hide();
       };
 
-      scope.calculate = function (toCalc) {
-        $state.go('app.result');
-        if (toCalc) {
-          if (isNaN(toCalc)) {
-            toCalc = 0;
+      scope.calculate = function () {
+        if (scope.toCalc) {
+          $state.go('app.result');
+          if (isNaN(scope.toCalc)) {
+            scope.toCalc = 0;
           }
-
           if (scope.dolar) {
-
             scope.valores = {};
             scope.valores.oficial = (toCalc * Number(scope.dolar.dolarVenta)).toFixed(2);
             scope.valores.ahorro = (toCalc * Number(((scope.dolar.dolarVenta * 20)) / 100)).toFixed(2);
@@ -77,10 +75,7 @@ angular.module('dolarHoy2.controllers', [])
             scope.valores.tarjeta = (toCalc * Number(scope.dolar.dolarTarjeta)).toFixed(2);
             scope.valores.real = (toCalc * Number(scope.dolar.realVenta)).toFixed(2);
             scope.valores.euro = (toCalc * Number(scope.dolar.euroVenta)).toFixed(2);
-            console.log(scope.valores);
-
           }
-
         }
       };
 
@@ -97,7 +92,9 @@ angular.module('dolarHoy2.controllers', [])
       };
 
       scope.startGraph = function () {
-        scope.load();
+        $ionicLoading.show({
+          template: '<p>Actualizando datos...</p><ion-spinner></ion-spinner>'
+        });
         ambitoService
             .graphDolarOficial()
             .then(function (data) {
@@ -105,8 +102,8 @@ angular.module('dolarHoy2.controllers', [])
               scope.labelsDolarOficial = [];
               scope.dataDolarOficial = [];
               data.data.forEach(function (element, index, array) {
-                var date = new Date(element[0]);
-                scope.labelsDolarOficial.push(date.getDay() + '/' + date.getMonth() + '/' + date.getFullYear());
+                var date = element[0].split('/');
+                scope.labelsDolarOficial.push(date[2] + '/' + date[1] + '/'+ date[0]);
                 scope.dataDolarOficial.push(element[1].toString());
               });
               scope.dataDolarOficial = [scope.dataDolarOficial];
@@ -114,17 +111,12 @@ angular.module('dolarHoy2.controllers', [])
               scope.optionsDolarOficial = {
                 animation: false ,
                 bezierCurve: false,
-                tooltipTemplate: 'U$S <%= value %>',
-                /*showTooltips: true,
-                onAnimationComplete: function() {
-                  this.showTooltip(this.datasets[0].points, true);
-                },
-                tooltipEvents: []*/
+                tooltipTemplate: 'U$S <%= value %>'
               };
               scope.coloursDolarOficial = [{ // default
                 fillColor: '#d6f5df',
                 strokeColor: '#19662F',
-                pointColor: 'rgba(220,220,220,1)',
+                pointColor: 'rgba(255, 255, 255, 1)',
                 pointStrokeColor: '#19662F',
                 pointHighlightFill: '#fff',
                 pointHighlightStroke: 'rgba(220,220,220,1)'
@@ -142,8 +134,8 @@ angular.module('dolarHoy2.controllers', [])
               scope.labelsDolarBlue = [];
               scope.dataDolarBlue = [];
               data.data.forEach(function (element, index, array) {
-                var date = new Date(element[0]);
-                scope.labelsDolarBlue.push(date.getDay() + '/' + date.getMonth() + '/' + date.getFullYear());
+                var date = element[0].split('/');
+                scope.labelsDolarBlue.push(date[2] + '/' + date[1] + '/'+ date[0]);
                 scope.dataDolarBlue.push(element[1].toString());
               });
               scope.dataDolarBlue = [scope.dataDolarBlue];
@@ -151,17 +143,12 @@ angular.module('dolarHoy2.controllers', [])
               scope.optionsDolarBlue = {
                 animation: false ,
                 bezierCurve: false,
-                tooltipTemplate: 'U$S <%= value %>',
-                /*showTooltips: true,
-                onAnimationComplete: function() {
-                  this.showTooltip(this.datasets[0].points, true);
-                },
-                tooltipEvents: []*/
+                tooltipTemplate: 'U$S <%= value %>'
               };
               scope.coloursDolarBlue = [{ // default
                 fillColor: '#cff3fc',
                 strokeColor: '#11c1f3',
-                pointColor: 'rgba(220,220,220,1)',
+                pointColor: 'rgba(255, 255, 255, 1)',
                 pointStrokeColor: '#11c1f3',
                 pointHighlightFill: '#fff',
                 pointHighlightStroke: 'rgba(220,220,220,1)'
@@ -178,8 +165,8 @@ angular.module('dolarHoy2.controllers', [])
               scope.labelsDolarAhorro = [];
               scope.dataDolarAhorro = [];
               data.data.forEach(function (element, index, array) {
-                var date = new Date(element[0]);
-                scope.labelsDolarAhorro.push(date.getDay() + '/' + date.getMonth() + '/' + date.getFullYear());
+                var date = element[0].split('/');
+                scope.labelsDolarAhorro.push(date[2] + '/' + date[1] + '/'+ date[0]);
                 scope.dataDolarAhorro.push(element[1].toString());
               });
               scope.dataDolarAhorro = [scope.dataDolarAhorro];
@@ -187,12 +174,7 @@ angular.module('dolarHoy2.controllers', [])
               scope.optionsDolarAhorro  = {
                 animation: false ,
                 bezierCurve: false,
-                tooltipTemplate: 'U$S <%= value %>',
-                /*showTooltips: true,
-                onAnimationComplete: function() {
-                  this.showTooltip(this.datasets[0].points, true);
-                },
-                tooltipEvents: []*/
+                tooltipTemplate: 'U$S <%= value %>'
               };
               scope.coloursDolarAhorro = [{ // default
                 fillColor: '#fff4cc',
