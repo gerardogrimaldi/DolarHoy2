@@ -17,3 +17,5 @@ hooks/after_prepare/010_add_platform_class.js
 .idea/
 .idea/workspace.xml
 
+*.apk
+dolaryhoy2-release.apk
