@@ -4,7 +4,6 @@
   </ion-nav-buttons>
 
   <ion-content class="has-header">
-
     <div class="row">
       <div class="col"></div>
       <div class="col col-90">
@@ -18,6 +17,39 @@
               Calcular
             </button>
           </div>
+        </div>
+      </div>
+      <div class="col"></div>
+    </div>
+
+    <div class="row" ng-if="showResult">
+      <div class="col"></div>
+      <div class="col col-90">
+        <div class="list">
+          <label class="item item-input item-stacked-label" ng-click="copy('Dolar Oficial', dolar.dolarVenta)">
+            <span class="input-label" style="font-weight: bold"> Dolar Oficial</span>
+            <spam >{{ 'U$S' +  ' ' + valores.oficial }}</spam>
+          </label>
+          <label class="item item-input item-stacked-label" ng-click="copy('Dolar Ahorro', dolar.ahorro)">
+            <span class="input-label" style="font-weight: bold"> Dolar Ahorro</span>
+            <spam >{{ 'U$S' + ' ' + valores.ahorro }}</spam>
+          </label>
+          <label class="item item-input item-stacked-label" ng-click="copy('Dolar Paralelo', valores.blue)">
+            <span class="input-label" style="font-weight: bold" > Dolar Paralelo</span>
+            <spam >{{ 'U$S' + ' ' + valores.blue }}</spam>
+          </label>
+          <label class="item item-input item-stacked-label" ng-click="copy('Dolar Tarjeta', valores.tarjeta)">
+            <span class="input-label" style="font-weight: bold"> Dolar Tarjeta</span>
+            <spam >{{ 'U$S' + ' ' + valores.tarjeta }}</spam>
+          </label>
+          <label class="item item-input item-stacked-label" ng-click="copy('Real',  valores.real )">
+            <span class="input-label" style="font-weight: bold">Real</span>
+            <spam >{{ 'R$' + ' ' + valores.real }}</spam>
+          </label>
+          <label class="item item-input item-stacked-label" ng-click="copy('Euro', valores.euro)">
+            <span class="input-label" style="font-weight: bold">Euro</span>
+            <spam>{{ '&#8364;' + ' ' + valores.euro }}</spam>
+          </label>
         </div>
       </div>
       <div class="col"></div>

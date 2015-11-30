@@ -82,11 +82,14 @@ C:/Users/user2/Documents/GitHub/DolarHoy2/platforms/android/build/outputs/apk/an
 
 
 #WINDOWS
+
+cordova build --release android
+
 keytool -genkey -v -keystore dolarhoy2.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 && 
 
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore C:\Users\user2\Documents\GitHub\DolarHoy2\dolarhoy2
 .keystore  C:\Users\user2\Documents\GitHub\DolarHoy2\platforms\android\build\outputs\apk\android-release-unsigned.apk
- milo && 
+ milo 
 
 C:\Users\user2\android-sdk\build-tools\22.0.1\zipalign -v 4  
 C:/Users/user2/Documents/GitHub/DolarHoy2/platforms/android/build/outputs/apk/android-release-unsigned.apk 

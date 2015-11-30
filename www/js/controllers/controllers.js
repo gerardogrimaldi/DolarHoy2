@@ -8,6 +8,7 @@ angular.module('dolarHoy2.controllers', [])
       scope.valores = {};
       // Triggered on a button click, or some other target
       scope.copy = function (type, toCopyValue) {
+        debugger;
         scope.toCopyValue = toCopyValue;
         var hideSheet = $ionicActionSheet.show({
           buttons: [{text: '<b>Copiar Valor</b>'}],
@@ -23,8 +24,8 @@ angular.module('dolarHoy2.controllers', [])
                     .copy(scope.toCopyValue)
                     .then(function () {
                       $cordovaDialogs.alert('Copiado el valor ' + scope.toCopyValue,
-                          'Copiar valor', 'Ok')
-                          .then(function () {
+                          'Copiar valor', 'Ok').then(
+                          function () {
                             // callback success
                           });
                     }, function () {
@@ -61,21 +62,20 @@ angular.module('dolarHoy2.controllers', [])
         $ionicLoading.hide();
       };
 
-      scope.calculate = function () {
-        if (scope.toCalc) {
-          $state.go('app.result');
-          if (isNaN(scope.toCalc)) {
-            scope.toCalc = 0;
+      scope.calculate = function (toCalc) {
+        if (toCalc) {
+          scope.toCalc = toCalc;
+          //$state.go('app.result');
+          if (!scope.dolar) {
+            scope.load();
           }
-          if (scope.dolar) {
-            scope.valores = {};
-            scope.valores.oficial = (toCalc * Number(scope.dolar.dolarVenta)).toFixed(2);
-            scope.valores.ahorro = (toCalc * Number(((scope.dolar.dolarVenta * 20)) / 100)).toFixed(2);
-            scope.valores.blue = (toCalc * Number(scope.dolar.dolarBlueCompra)).toFixed(2);
-            scope.valores.tarjeta = (toCalc * Number(scope.dolar.dolarTarjeta)).toFixed(2);
-            scope.valores.real = (toCalc * Number(scope.dolar.realVenta)).toFixed(2);
-            scope.valores.euro = (toCalc * Number(scope.dolar.euroVenta)).toFixed(2);
-          }
+          scope.valores.oficial = (scope.toCalc * Number(scope.dolar.dolarVenta)).toFixed(2);
+          scope.valores.ahorro = (scope.toCalc * Number(((scope.dolar.dolarVenta * 20)) / 100)).toFixed(2);
+          scope.valores.blue = (scope.toCalc * Number(scope.dolar.dolarBlueCompra)).toFixed(2);
+          scope.valores.tarjeta = (scope.toCalc * Number(scope.dolar.dolarTarjeta)).toFixed(2);
+          scope.valores.real = (scope.toCalc * Number(scope.dolar.realVenta)).toFixed(2);
+          scope.valores.euro = (scope.toCalc * Number(scope.dolar.euroVenta)).toFixed(2);
+          scope.showResult = true;
         }
       };
 
@@ -189,5 +189,8 @@ angular.module('dolarHoy2.controllers', [])
               console.log('error');
             });
         scope.hide();
+      };
+      scope.myGoBack = function() {
+        $state.go('app.calc');
       }
     });
