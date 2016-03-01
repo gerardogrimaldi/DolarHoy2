@@ -59,11 +59,11 @@ angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'chart.js', '
       controller: 'DolarCtrl'
     })
 
-    .state('app.dollar', {
-      url: "/dollar",
+    .state('app.dolar', {
+      url: "/dolar",
       views: {
         'menuContent' :{
-          templateUrl: "templates/dollar.html",
+          templateUrl: "templates/dolar.html",
           controller: 'DolarCtrl'
         }
       }
@@ -119,5 +119,5 @@ angular.module('dolarhoy2', ['dolarHoy2.controllers', 'ngCordova', 'chart.js', '
     })
   ;
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/dollar');
+  $urlRouterProvider.otherwise('/app/dolar');
 });

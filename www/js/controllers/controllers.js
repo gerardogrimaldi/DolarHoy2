@@ -8,7 +8,6 @@ angular.module('dolarHoy2.controllers', [])
       scope.valores = {};
       // Triggered on a button click, or some other target
       scope.copy = function (type, toCopyValue) {
-        debugger;
         scope.toCopyValue = toCopyValue;
         var hideSheet = $ionicActionSheet.show({
           buttons: [{text: '<b>Copiar Valor</b>'}],
@@ -25,9 +24,7 @@ angular.module('dolarHoy2.controllers', [])
                     .then(function () {
                       $cordovaDialogs.alert('Copiado el valor ' + scope.toCopyValue,
                           'Copiar valor', 'Ok').then(
-                          function () {
-                            // callback success
-                          });
+                          function () {});
                     }, function () {
                       $window.console.log('error');
                     });
