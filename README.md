@@ -66,7 +66,7 @@ bower install && npm install
 
 cordova plugin rm org.apache.cordova.console && 
 
-cordova build --release android && 
+cordova build --release android &&  
 
 
 #MAC OSX //TODO
@@ -88,12 +88,13 @@ del  dolaryhoy2-release.apk && cordova build --release android && jarsigner -ver
 b\DolarHoy2\platforms\android\build\outputs\apk\android-release-unsigned.apk milo && C:\Users\user2\android-sdk\build-tools\22.0.1\zipalign -v 4  C:/Users/user2/Documents/GitHub/DolarHoy2/platforms/android/build/outputs/apk/android-release-unsigned.apk dolaryhoy2-r
 elease.apk
  
-
+#phassprase es tu pass
 
 ###ANDROID HOME
 export ANDROID_HOME=/Applications/android-sdk-macosx export ANDROID_TOOLS=Applications/android-sdk-macosx/android-sdk/tools/ 
 
 export ANDROID_PLATFORM_TOOLS=Applications/android-sdk-macosx/platform-tools/ PATH=$PATH:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:.
+
 
 
 ###OLD CODE
