@@ -1,0 +1,18 @@
+{
+  "android": {
+    "debug": {
+      "keystore": "dolarhoy2.keystore",
+      "storePassword": "",
+      "alias": "milo",
+      "password": "",
+      "keystoreType": ""
+    },
+    "release": {
+      "keystore": "dolarhoy2.keystore",
+      "storePassword": "",
+      "alias": "milo",
+      "password": "",
+      "keystoreType": ""
+    }
+  }
+}
