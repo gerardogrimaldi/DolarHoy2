@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="2" id="com.Gerardo.Grimaldi.DolarHoy" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="29" id="com.Gerardo.Grimaldi.DolarHoy" version="2.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Dolar Hoy 2</name>
-    <description>
-        An Ionic Framework and Cordova project.
+    <description>
+        An Ionic Framework and Cordova project.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="hi@ionicframework" href="http://ionicframework.com/">
+      Ionic Framework Team
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -17,13 +17,13 @@
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
     <platform name="android">
-        <icon density="ldpi" src="resources\android\icon\drawable-ldpi-icon.png" />
-        <icon density="mdpi" src="resources\android\icon\drawable-mdpi-icon.png" />
-        <icon density="hdpi" src="resources\android\icon\drawable-hdpi-icon.png" />
-        <icon density="xhdpi" src="resources\android\icon\drawable-xhdpi-icon.png" />
-        <icon density="xxhdpi" src="resources\android\icon\drawable-xxhdpi-icon.png" />
-        <icon density="xxxhdpi" src="resources\android\icon\drawable-xxxhdpi-icon.png" />
+        <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
     </platform>
-    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
-    <engine name="android" spec="^6.2.3" />
+    <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <engine name="android" spec="6.2.3" />
 </widget>

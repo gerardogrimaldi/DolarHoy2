@@ -10,6 +10,7 @@ npm install -g ionic
 ionic lib update
 
 ##Icons and splash screens
+
 http://blog.ionic.io/automating-icons-and-splash-screens/
 
 $ ionic resources --icon
@@ -18,6 +19,7 @@ $ ionic resources --splash
 ###Hibrid actualization of Dolar Hoy
 
 #ADMOB
+
 ionic plugin add https://github.com/floatinghotpot/cordova-plugin-admob.git
 
 ionic plugin add https://github.com/VersoSolutions/CordovaClipboard.git
@@ -59,15 +61,18 @@ ionic setup sass
 ###Deploy APK
 
 ##Rename
+
 http://forum.ionicframework.com/t/renaming-android-build-apk-from-cordovaapp-to-your-app-name/15416
 
 #Pre build
+
 bower install && npm install
 
 cordova plugin rm org.apache.cordova.console && 
 
-cordova build --release android &&  
+cordova platform add android && 
 
+cordova build --release android   
 
 #MAC OSX //TODO
 keytool -genkey -v -keystore dolarhoy2.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 && 
@@ -80,8 +85,8 @@ C:\Users\user2\android-sdk\build-tools\22.0.1\zipalign -v 4
 
 C:/Users/user2/Documents/GitHub/DolarHoy2/platforms/android/build/outputs/apk/android-release-unsigned.apk dolarhoy2-release.apk 
 
-
 #WINDOWS
+
 keytool -genkey -v -keystore dolarhoy2.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 && del dolaryhoy2-release.apk &&
   cordova build --release android &&
   jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystoreD:\Github\DolarHoy2\dolarhoy2.keystore 
@@ -91,13 +96,13 @@ elease.apk
 #phassprase es tu pass
 
 ###ANDROID HOME
+
 export ANDROID_HOME=/Applications/android-sdk-macosx export ANDROID_TOOLS=Applications/android-sdk-macosx/android-sdk/tools/ 
 
 export ANDROID_PLATFORM_TOOLS=Applications/android-sdk-macosx/platform-tools/ PATH=$PATH:$ANDROID_HOME:$ANDROID_TOOLS:$ANDROID_PLATFORM_TOOLS:.
 
-
-
 ###OLD CODE
+
 com.ionicframework.dolarhoy2212444
 
 ###NEW CODE

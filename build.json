@@ -2,16 +2,16 @@
   "android": {
     "debug": {
       "keystore": "dolarhoy2.keystore",
-      "storePassword": "",
+      "storePassword": "", // A 123
       "alias": "milo",
-      "password": "",
+      "password": "", // A 123
       "keystoreType": ""
     },
     "release": {
       "keystore": "dolarhoy2.keystore",
-      "storePassword": "",
+      "storePassword": "", // A 123
       "alias": "milo",
-      "password": "",
+      "password": "", // A 123
       "keystoreType": ""
     }
   }
