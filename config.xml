@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="29" id="com.Gerardo.Grimaldi.DolarHoy" version="2.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="30" id="com.Gerardo.Grimaldi.DolarHoy" version="2.2.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Dolar Hoy 2</name>
     <description>
         Dolar hoy app proyect.
@@ -25,5 +25,6 @@
         <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
     </platform>
     <icon src="resources/android/icon/drawable-xhdpi-icon.png" />
-    <engine name="android" spec="6.2.3" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+    <engine name="android" spec="^6.4.0" />
 </widget>

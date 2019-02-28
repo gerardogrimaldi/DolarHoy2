@@ -51,6 +51,9 @@ angular.module('dolarHoy2.controllers', [])
           .then(function (data) {
             scope.dolar = data;
             scope.hide();
+          }, function(err) {
+            alert('Los valores del dolar no puedieron ser obtenidos intente mas tarde...');
+            scope.hide();
           });
       };
 
