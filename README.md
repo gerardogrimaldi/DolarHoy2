@@ -3,7 +3,8 @@ DolarHoy2
 
 ##Ionic install
  
-npm install -g ionic
+npm install -g ionic@1.2.4
+
 
 ###Update
 
